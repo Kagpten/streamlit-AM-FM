@@ -36,9 +36,9 @@ modulasi_type = st.radio("Pilih jenis modulasi:", ["Amplitudo", "Frekuensi"])
 
 # input parameter
 A_m = st.number_input('Masukan Amplitudo Informasi (V)', min_value=0.1, max_value=10.0, step=0.1, value=1.0)
-f_m = st.number_input('Masukan Frekuensi Informasi (s)', min_value=1.0, max_value=100.0, step=1.0, value=5.0)
+f_m = st.number_input('Masukan Frekuensi Informasi (Hz)', min_value=1.0, max_value=100.0, step=1.0, value=5.0)
 A_c = st.number_input('Masukan Amplitudo Pembawa (V)', min_value=1.0, max_value=10.0, step=0.1, value=5.0)
-f_c = st.number_input('Masukan Frekuensi Pembawa (s)', min_value=1.0, max_value=100.0, step=1.0, value=50.0)
+f_c = st.number_input('Masukan Frekuensi Pembawa (Hz)', min_value=1.0, max_value=100.0, step=1.0, value=50.0)
 t = np.linspace(0, 1, 1000)
 
 if modulasi_type == "Amplitudo":
